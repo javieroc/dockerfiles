@@ -8,6 +8,10 @@ RUN apt-get update && \
     apt-get install -y php-mysql && \
     apt-get install -y php libapache2-mod-php php-mcrypt
 
+# Install some utils
+RUN apt-get install -y curl && \
+    apt-get install -y vim
+
 # Enable apache mods
 RUN a2enmod rewrite
 
