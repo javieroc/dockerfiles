@@ -1,12 +1,12 @@
 FROM debian:testing
 
-MAINTAINER Javier Ocampo version 1.0
+MAINTAINER Javier Ocampo version 1.2
 
 # Install apache, php and libraries needed.
 RUN apt-get update && \
     apt-get install -y apache2 && \
-    apt-get install -y php-mysql && \
-    apt-get install -y php libapache2-mod-php php-mcrypt
+    apt-get install -y php php-mysql php-mcrypt php-curl php-gd php-mbstring php-xml && \
+    apt-get install -y libapache2-mod-php
 
 # Install some utils
 RUN apt-get install -y curl && \
