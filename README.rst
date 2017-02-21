@@ -1,1 +1,1 @@
-Severals Dockerfiles for build differents envrionments
+Several Dockerfiles for build differents envrionments
