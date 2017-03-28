@@ -13,13 +13,16 @@ RUN apt-get update && \
         php-gd \
         php-mbstring \
         php-xml \
+        php-zip \
         libapache2-mod-php
 
 # Install some utils
 RUN apt-get install -y \
         curl \
         vim \
-        supervisor
+        supervisor \
+        zip \
+        unzip
 
 RUN \
     # Install composer
