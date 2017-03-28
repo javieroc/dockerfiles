@@ -21,6 +21,10 @@ RUN apt-get install -y \
         vim \
         supervisor
 
+RUN \
+    # Install composer
+    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 # Enable apache mods
 RUN a2enmod rewrite
 
