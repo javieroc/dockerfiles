@@ -8,6 +8,7 @@ RUN apt-get update && \
         apache2 \
         php \
         php-mysql \
+        php-pgsql \
         php-mcrypt \
         php-curl \
         php-gd \
